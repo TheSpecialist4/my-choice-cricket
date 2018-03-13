@@ -1,6 +1,5 @@
 package cricket;
 
-import org.apache.log4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.amazon.speech.json.SpeechletRequestEnvelope;
@@ -16,9 +15,9 @@ import com.amazon.speech.ui.PlainTextOutputSpeech;
 import com.amazon.speech.ui.Reprompt;
 import com.amazon.speech.ui.SsmlOutputSpeech;
 
-public class CricketSpeechLet implements SpeechletV2 {
+public class CricketSpeechlet implements SpeechletV2 {
 
-	private static org.slf4j.Logger log = LoggerFactory.getLogger(CricketSpeechLet.class);
+	private static org.slf4j.Logger log = LoggerFactory.getLogger(CricketSpeechlet.class);
 	
 	@Override
 	public void onSessionStarted(SpeechletRequestEnvelope<SessionStartedRequest> requestEnvelope) {
@@ -42,24 +41,41 @@ public class CricketSpeechLet implements SpeechletV2 {
 		
 		Intent intent = request.getIntent();
 		String intentName = (intent != null) ? intent.getName() : null;
-		
-		return null;
+		if ("AMAZON.StopIntent".equals(intentName)) {
+			return getGoodbyeMessage();
+		} else if ("AMAZON.CancelIntent".equals(intentName)) {
+			return getGoodbyeMessage();
+		} else {
+			return handleGameStartIntent();
+		}
 	}
 
 	@Override
 	public void onSessionEnded(SpeechletRequestEnvelope<SessionEndedRequest> requestEnvelope) {
-		// TODO Auto-generated method stub
+		log.info("onSessionStarted requestId = {} sessionId = {}", requestEnvelope.getRequest().getRequestId(),
+				requestEnvelope.getSession().getSessionId());
 		
+	}
+	
+	private SpeechletResponse getGoodbyeMessage() {
+		String speechText = "Goodbye";
+		return getNewTellResponse(speechText, false);
+	}
+	
+	private SpeechletResponse handleGameStartIntent() {
+		String speechText = QuestionFactory.getQuestion();
+		String repromptText = "You can say Skip to skip this question.";
+		return getNewAskResponse(speechText, repromptText);
 	}
 	
 	private SpeechletResponse getWelcomeMessage() {
 		String speechText = IntroMessageFactory.getIntroMessage();
 		speechText += "Welcome! Please say Start to start the game.";
-		return newTellResponse(speechText, true);
+		return getNewTellResponse(speechText, true);
 	}
 	
-	private SpeechletResponse newTellResponse(String speechText, boolean isSSML) {
-		OutputSpeech outputSpeech, repromptSpeech;
+	private SpeechletResponse getNewTellResponse(String speechText, boolean isSSML) {
+		OutputSpeech outputSpeech;
 		if (isSSML) {
 			outputSpeech = new SsmlOutputSpeech();
 			((SsmlOutputSpeech) outputSpeech).setSsml(speechText);
@@ -69,5 +85,15 @@ public class CricketSpeechLet implements SpeechletV2 {
 		}
 		return SpeechletResponse.newTellResponse(outputSpeech);
 	}
-
+	
+	private SpeechletResponse getNewAskResponse(String speechText, String repromptText) {
+		OutputSpeech outputSpeech, repromptSpeech;
+		outputSpeech = new PlainTextOutputSpeech();
+		((PlainTextOutputSpeech) outputSpeech).setText(speechText);
+		repromptSpeech = new PlainTextOutputSpeech();
+		((PlainTextOutputSpeech) repromptSpeech).setText(repromptText);
+		Reprompt reprompt = new Reprompt();
+		reprompt.setOutputSpeech(repromptSpeech);
+		return SpeechletResponse.newAskResponse(outputSpeech, reprompt);
+	}
 }

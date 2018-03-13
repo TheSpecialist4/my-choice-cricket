@@ -51,6 +51,8 @@ public class QuestionFactory {
 		questions.add("Batting or Bowling?");
 		questions.add("Rahul Dravid or Saurav Ganguly?");
 		questions.add("Shastri or Gavaskar?");
+		questions.add("Super over or bowl-out?");
+		questions.add("Sachin and Sehwag, or Rohit and Dhawan?");
 	}
 	
 	public static String getQuestion() {

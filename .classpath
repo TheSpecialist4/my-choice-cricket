@@ -6,6 +6,12 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-core/1.1.0/b25d4345c6e9e8be78b2803dd43d812f15178a81/aws-lambda-java-core-1.1.0.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-core/1.1.0/e4543b35efeb6dbb2ddc7e63a0ee2e681e90c321/aws-lambda-java-core-1.1.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-core/1.1.0/cf695d5b9091f1c7ddd5e8b6f95f89626cd9e95b/aws-lambda-java-core-1.1.0-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazon.alexa/alexa-skills-kit/1.5.0/2d46a52f415aaf46e77071313028908e455b70a8/alexa-skills-kit-1.5.0.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazon.alexa/alexa-skills-kit/1.5.0/4bdf1a22cb1a33ee0902d6eb3a4075b57e67e4e9/alexa-skills-kit-1.5.0-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazon.alexa/alexa-skills-kit/1.5.0/d9c017442324eccc94a8f21ac733eac50d1c2a99/alexa-skills-kit-1.5.0-javadoc.jar!/"/>
@@ -15,12 +21,6 @@
 	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-log4j/1.0.0/9f7ef4af2cb0abee3705ae6821b7f3c1ab83d5ed/aws-lambda-java-log4j-1.0.0.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-log4j/1.0.0/9860bfb639ee4ab2f3a7bb6cb9c566c23bd00ebb/aws-lambda-java-log4j-1.0.0-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-log4j/1.0.0/e0c3683e93abbe1568150437ccd4e9fc6229adad/aws-lambda-java-log4j-1.0.0-javadoc.jar!/"/>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-core/1.1.0/b25d4345c6e9e8be78b2803dd43d812f15178a81/aws-lambda-java-core-1.1.0.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-core/1.1.0/e4543b35efeb6dbb2ddc7e63a0ee2e681e90c321/aws-lambda-java-core-1.1.0-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-core/1.1.0/cf695d5b9091f1c7ddd5e8b6f95f89626cd9e95b/aws-lambda-java-core-1.1.0-javadoc.jar!/"/>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
