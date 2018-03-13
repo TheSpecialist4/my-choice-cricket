@@ -1,7 +1,15 @@
 apply plugin: 'java'
+apply plugin: 'eclipse'
 
-group = "alexa-skills-kit-samples"
+group = "alexa-cricket"
 version = '1.0'
+
+eclipse {
+	classpath {
+		downloadJavadoc = true
+		downloadSources = true
+	}
+}
 
 compileJava {
     targetCompatibility = JavaVersion.VERSION_1_8

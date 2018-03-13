@@ -1,6 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" output="bin/main" path="src">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazon.alexa/alexa-skills-kit/1.5.0/2d46a52f415aaf46e77071313028908e455b70a8/alexa-skills-kit-1.5.0.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazon.alexa/alexa-skills-kit/1.5.0/4bdf1a22cb1a33ee0902d6eb3a4075b57e67e4e9/alexa-skills-kit-1.5.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazon.alexa/alexa-skills-kit/1.5.0/d9c017442324eccc94a8f21ac733eac50d1c2a99/alexa-skills-kit-1.5.0-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-log4j/1.0.0/9f7ef4af2cb0abee3705ae6821b7f3c1ab83d5ed/aws-lambda-java-log4j-1.0.0.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-log4j/1.0.0/9860bfb639ee4ab2f3a7bb6cb9c566c23bd00ebb/aws-lambda-java-log4j-1.0.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-log4j/1.0.0/e0c3683e93abbe1568150437ccd4e9fc6229adad/aws-lambda-java-log4j-1.0.0-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-core/1.1.0/b25d4345c6e9e8be78b2803dd43d812f15178a81/aws-lambda-java-core-1.1.0.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-core/1.1.0/e4543b35efeb6dbb2ddc7e63a0ee2e681e90c321/aws-lambda-java-core-1.1.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-core/1.1.0/cf695d5b9091f1c7ddd5e8b6f95f89626cd9e95b/aws-lambda-java-core-1.1.0-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.0/8837262ff98225a81608b8c11aea642d9449228b/slf4j-log4j12-1.7.0.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.0/2dc38593089f22501ed4f867e9b58b7b4023616d/slf4j-log4j12-1.7.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.0/5b19f363487f9e515e0e2625d24a9fb063483f7e/slf4j-log4j12-1.7.0-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/677abe279b68c5e7490d6d50c6951376238d7d3e/log4j-1.2.17-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/c10c20168206896442f3192d5417815df7fcbf9a/log4j-1.2.17-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/d2a489573c0ed2c4942b3660decad5d65087b406/commons-lang3-3.3.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/43ffe692648166363bceadc63ac76c7d19b4ebd7/commons-lang3-3.3.2-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.apache.directory.studio/org.apache.commons.io/2.4/b98d592c582262b3da8a871c7317f4902d98e996/org.apache.commons.io-2.4.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.apache.directory.studio/org.apache.commons.io/2.4/87a593f6ea7387c639383381bf32a328a13b1786/org.apache.commons.io-2.4-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.0.6.v20130930/b6953af6f857e78fe3c46935fa96f9c80a9cbefd/jetty-servlet-9.0.6.v20130930.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.0.6.v20130930/29764d19aaadffde35d5f1d88a139728db8a6b96/jetty-servlet-9.0.6.v20130930-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.0.6.v20130930/17c581fa9ddccad52ed13f21ab74228d56dcc4d4/jetty-servlet-9.0.6.v20130930-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.0.6.v20130930/b16cd29ad9d3d3cca8176a654adf4b2ddca0eb3e/jetty-security-9.0.6.v20130930.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.0.6.v20130930/50acd24a87c5de9c51c6ed864466346037471e71/jetty-security-9.0.6.v20130930-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.0.6.v20130930/b44d5e8acb8d89721fd37e46e1c5ebf604fc22ca/jetty-security-9.0.6.v20130930-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.0.6.v20130930/d89016c2bcd380f548530fa049295e62601dc564/jetty-server-9.0.6.v20130930.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.0.6.v20130930/644b8a5b9ffcb85e1ab6b1cba1ce3e56f671d2d8/jetty-server-9.0.6.v20130930-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.0.6.v20130930/ef6d021a50c42fb240f70dc7a4fab4a97be29723/jetty-server-9.0.6.v20130930-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.10/5b338f206827d88acd890739f400a9b7664e5984/slf4j-api-1.7.10.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.10/4d2725efe68b9943ba0deaf334bb27116ca6b687/slf4j-api-1.7.10-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.10/79aa3ce1fc6becdcd63593a2bb867361e76af1be/slf4j-api-1.7.10-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.0.1/6bf0ebb7efd993e222fc1112377b5e92a13b38dd/javax.servlet-api-3.0.1.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.0.1/1952f91d84016a39e31346c9d18bd8c9c4a128a/javax.servlet-api-3.0.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.0.1/3f57066b688f59cb998517a6e618bd53492f8c43/javax.servlet-api-3.0.1-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.7/1857f49ee9dffe1c8d17d4c3980e0d713af2806/jackson-databind-2.6.7.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.7/b03af0d8ea33f3895b894571b6bfa784fb3bdf42/jackson-databind-2.6.7-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.7/bf5bb02e174df23afe8f9fd83484e106450856fb/jackson-databind-2.6.7-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.2/daf24f84fe134864b9e4d0b4e437c81353ac06c2/jackson-annotations-2.6.2.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.2/1084031419d8d57149233bbd66eef839c6128718/jackson-annotations-2.6.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.2/2cb68aa48c4dfd5675ff805e1691e06ef4ec4784/jackson-annotations-2.6.2-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.7/81838e08d5e10e33cdee7299f9682d836b78c63e/jackson-core-2.6.7.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.7/3f689e85593aeb1e8d75dcc4218245aca279d51b/jackson-core-2.6.7-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.7/b9bc66c455fa7bde1ae2ec68085b989d7129526d/jackson-core-2.6.7-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/61e9f9d11fe3e12ec62f633006e99d75fd7f19c8/commons-codec-1.6-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/3c2c41ec5e3ca4131f83cf611f5fd837892220bd/commons-codec-1.6-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/f2d8698c46d1167ff24b06a840a87d91a02db891/commons-io-2.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/3b5b0183c509963d5ffdf0d9d452a4a7521aeaa3/commons-io-2.4-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.0/752c0fe8a5b2d6704c9d9d6f06d9abdcacf4045d/joda-time-2.0.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.0/409a13768c666761c9efb41560e75464cbcd0b5b/joda-time-2.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.0/38080d5edfb6ed9708952ef06c7e7a28e1f4f114/joda-time-2.0-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.orbit/javax.servlet/3.0.0.v201112011016/aaaa85845fb5c59da00193f06b8e5278d8bf3f8/javax.servlet-3.0.0.v201112011016.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.orbit/javax.servlet/3.0.0.v201112011016/15c914135cf30177b83c321250c458396289cd37/javax.servlet-3.0.0.v201112011016-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.orbit/javax.servlet/3.0.0.v201112011016/2d6032be0c7222083e0e50c80ee55930519a63b1/javax.servlet-3.0.0.v201112011016-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.0.6.v20130930/b3a2302717ac1889b4a17ed03e2555f8291121b9/jetty-http-9.0.6.v20130930.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.0.6.v20130930/a36c1a781cb7ad886941b76ce3771a1b992e6e3e/jetty-http-9.0.6.v20130930-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.0.6.v20130930/46be76efa977b0d2f672e1a9ccefa110b65459c3/jetty-http-9.0.6.v20130930-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.0.6.v20130930/f3a66e0507d963c51e280243f0472a5b2eadc8b1/jetty-io-9.0.6.v20130930.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.0.6.v20130930/42261c3f8f492a72c71630a54a7910415aa615a8/jetty-io-9.0.6.v20130930-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.0.6.v20130930/e3e8e6312bb66e9c8208f296e5c20b284e6815ce/jetty-io-9.0.6.v20130930-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.0.6.v20130930/f36c9e61559d1154be9b52803ef4f586e401dac6/jetty-util-9.0.6.v20130930.jar" sourcepath="C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.0.6.v20130930/f4d41d3f645411eab1a3f36a1bcfc7b5d57cefef/jetty-util-9.0.6.v20130930-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/kaamr/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.0.6.v20130930/de9223ba93c5544f92244b222850c5138395b9c3/jetty-util-9.0.6.v20130930-javadoc.jar!/"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry kind="output" path="bin/default"/>
 </classpath>
