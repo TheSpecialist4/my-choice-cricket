@@ -45,6 +45,8 @@ public class CricketSpeechlet implements SpeechletV2 {
 			return getGoodbyeMessage();
 		} else if ("AMAZON.CancelIntent".equals(intentName)) {
 			return getGoodbyeMessage();
+		} else if ("AMAZON.HelpIntent".equals(intentName)) {
+			return getHelpMessage();
 		} else {
 			return handleGameStartIntent();
 		}
@@ -59,6 +61,11 @@ public class CricketSpeechlet implements SpeechletV2 {
 	
 	private SpeechletResponse getGoodbyeMessage() {
 		String speechText = "Goodbye";
+		return getNewTellResponse(speechText, false);
+	}
+	
+	private SpeechletResponse getHelpMessage() {
+		String speechText = "Do you think you can pick between two difficult choices? Try saying 'Start' to test yourself.";
 		return getNewTellResponse(speechText, false);
 	}
 	
