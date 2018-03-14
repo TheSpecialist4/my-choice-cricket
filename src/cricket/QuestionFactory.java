@@ -14,6 +14,8 @@ public class QuestionFactory {
 	
 	private static Random random = new Random();
 	
+	private static int counter = 0;
+	
 	private QuestionFactory() {
 	}
 	
@@ -56,10 +58,16 @@ public class QuestionFactory {
 	}
 	
 	public static String getQuestion() {
+		if (counter == questions.size()) {
+			asked.clear();
+			counter = 0;
+		}
 		int index = -1;
 		do {
 			index = random.nextInt(questions.size());
 		} while(!asked.add(index));
+		
+		counter++;
 		
 		return questions.get(index);
 	}
