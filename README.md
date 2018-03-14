@@ -1,4 +1,4 @@
-# my-choice-crikcet
+# My Choice: Cricket
 A Cricket version of would you rather for Alexa.
 
 ## Setting up locally
