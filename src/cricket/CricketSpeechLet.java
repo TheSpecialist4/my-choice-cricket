@@ -48,7 +48,7 @@ public class CricketSpeechlet implements SpeechletV2 {
 		} else if ("AMAZON.HelpIntent".equals(intentName)) {
 			return getHelpMessage();
 		} else {
-			return handleGameStartIntent();
+			return handleGameStartIntent("");
 		}
 	}
 
@@ -61,35 +61,32 @@ public class CricketSpeechlet implements SpeechletV2 {
 	
 	private SpeechletResponse getGoodbyeMessage() {
 		String speechText = "Goodbye";
-		return getNewTellResponse(speechText, false);
+		return getNewTellResponse(speechText);
 	}
 	
 	private SpeechletResponse getHelpMessage() {
-		String speechText = "Do you think you can pick between two difficult choices? Try saying 'Start' to test yourself.";
-		return getNewTellResponse(speechText, false);
+		String speechText = "Do you think you can pick between two difficult choices? Try saying 'play my choice cricket' to test yourself.";
+		return getNewTellResponse(speechText);
 	}
 	
-	private SpeechletResponse handleGameStartIntent() {
-		String speechText = QuestionFactory.getQuestion();
-		String repromptText = "You can say Skip to skip this question.";
+	private SpeechletResponse handleGameStartIntent(String welcomeMessage) {
+		String speechText = welcomeMessage;
+		speechText += QuestionFactory.getQuestion();
+		String repromptText = "You can say 'Skip' to skip this question, or 'Stop' exit.";
 		return getNewAskResponse(speechText, repromptText);
 	}
 	
 	private SpeechletResponse getWelcomeMessage() {
 		String speechText = IntroMessageFactory.getIntroMessage();
-		speechText += "Welcome! Please say Start to start the game.";
-		return getNewTellResponse(speechText, true);
+		speechText += "Welcome! ";
+		return handleGameStartIntent(speechText);
 	}
 	
-	private SpeechletResponse getNewTellResponse(String speechText, boolean isSSML) {
+	private SpeechletResponse getNewTellResponse(String speechText) {
 		OutputSpeech outputSpeech;
-		if (isSSML) {
-			outputSpeech = new SsmlOutputSpeech();
-			((SsmlOutputSpeech) outputSpeech).setSsml(speechText);
-		} else {
-			outputSpeech = new PlainTextOutputSpeech();
-			((PlainTextOutputSpeech) outputSpeech).setText(speechText);
-		}
+		outputSpeech = new PlainTextOutputSpeech();
+		((PlainTextOutputSpeech) outputSpeech).setText(speechText);
+		
 		return SpeechletResponse.newTellResponse(outputSpeech);
 	}
 	

@@ -30,13 +30,13 @@ public class QuestionFactory {
 		questions.add("Shane Warne or Ashwin?");
 		questions.add("Chris Gayle or Glenn Maxwell?");
 		questions.add("Eden Gardens or Wankhede?");
-		questions.add("Lords or MCG?");
-		questions.add("IPL or BBL?");
+		questions.add("Lords or M.C.G?");
+		questions.add("I.P.L or B.B.L?");
 		questions.add("Run out or stump out?");
 		questions.add("5 wickets for bowler, or a century for batsmen?");
 		questions.add("Kumble or Bhajji?");
 		questions.add("Sanjay Manjaraker or Harsha Bhogle?");
-		questions.add("Gaurav Kapoor or Sameer Kocher?");
+		questions.add("Gaurav Kapoor or Sameer Kochhar?");
 		questions.add("Shahid Afridi or Shoaib Malik?");
 		questions.add("Ashish Nehra or Zaheer Khan?");
 		questions.add("India vs Pakistan, or India vs Australia?");
@@ -44,7 +44,7 @@ public class QuestionFactory {
 		questions.add("Rahane or Jadeja?");
 		questions.add("Rising Pune Super Giants, or Pune Warriors India?");
 		questions.add("Deccan Chargers or Sun Risers?");
-		questions.add("AB Devilliers or Steve Smith?");
+		questions.add("A.B Devilliers or Steve Smith?");
 		questions.add("Wasim Akram or Waqar Younis?");
 		questions.add("Irfan Pathan or Yusuf Pathan?");
 		questions.add("ODI or Test?");
